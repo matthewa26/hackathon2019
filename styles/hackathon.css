@@ -3,7 +3,7 @@ html, body {
     padding: 0;
 }
 
-.background {
+.header-background {
     position: absolute;
     display: block;
     top: 0;
@@ -15,38 +15,14 @@ body {
     font-family: "Museo Sans", Arial, sans-serif;
 }
 
-.row-notification {
-    padding-top: 9px;
-    text-align: center;
-}
-
-.row-header {
+#header {
+    background: #000;
+    height: 100vh;
+    min-height: 600px;
     background-size: cover;
     background-position: 10%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    min-height: 520px;
-}
-
-@media only screen and (max-width: 800px) {
-    .row-header {
-        background-attachment: scroll;
-    }
-}
-
-.hackathon-image {
-    text-align: center;
-    padding-top: 30px;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .row-header {
-        min-height: 450px;
-    }
-    .hackathon-image {
-        padding-bottom: 15px;
-    }
 }
 
 h1 {
@@ -54,58 +30,16 @@ h1 {
     font-weight: 600;
 }
 
+h5 {
+    font-weight: 700;
+}
+
 p {
     letter-spacing: 0.02em;
 }
 
-hr {
-    border-top: 1px solid #aaa;
-}
-
-.panel {
-    border: 0px solid #E6E7E8;
-    background: #f1f1f1;
-    padding: 10px;
-}
-
-.event-info li {
-    padding-bottom: 5px;
+#content p {
     font-size: 16px;
-}
-
-.btn-register {
-    background: #FFFFFF;
-    border: 2px solid #146077;
-    color: #146077;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0.04em;
-    transition: all 0.25s;
-}
-
-.btn-register:hover {
-    background: #146077;
-    color: #FFFFFF;
-}
-
-.content p {
-    font-size: 16px;
-}
-
-.row-articles {
-    background: #2096BB;
-    color: white;
-    padding-bottom: 15px;
-}
-
-.list {
-    list-style: none;
-    padding-left: 10px;
-}
-
-ul.list li {
-    font-size: 110%;
 }
 
 a {
@@ -114,11 +48,10 @@ a {
 }
 
 a:hover {
-    font-weight: 700;
     text-decoration: none;
 }
 
-.footer {
+#footer {
     background: #000000;
     padding-top: 20px;
     padding-bottom: 30px;
