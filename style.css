@@ -117,9 +117,10 @@ a:hover {
 }
 
 #call-to-action span {
-     display: inline-block;
+    display: inline-block;
     color: white;
     font-weight: 700;
+    padding-right: 1rem;
 }
 
 #footer {
@@ -167,4 +168,15 @@ a:hover {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+/*
+ *  Media Queries
+ */
+
+@media screen and (max-width: 420px) {
+    #call-to-action span {
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
 }
