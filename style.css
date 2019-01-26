@@ -7,8 +7,9 @@ body {
 }
 
 h1 {
-    color: #146077;
-    font-weight: 600;
+    color: #E31837;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 h2 {
@@ -94,6 +95,22 @@ a:hover {
 #programs {
     background-color: #ccc;
     background-image: url('assets/circuit-background.svg');
+}
+
+#programs-title {
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#programs-title .card-body {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+#programs-title h2 {
+    padding: 0px;
+    margin: 0px;
 }
 
 #call-to-action {
