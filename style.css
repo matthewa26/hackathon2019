@@ -1,19 +1,57 @@
+/*
+ *  HTML Elements
+ */
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
-.header-background {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
 body {
     font-family: "Museo Sans", Arial, sans-serif;
 }
+
+h1 {
+    color: #146077;
+    font-weight: 600;
+}
+
+h2 {
+     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-weight: 700;
+}
+
+p {
+    letter-spacing: 0.02em;
+}
+
+a {
+    transition: all 0.25s;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*
+ *  Bootstrap Elements
+ */
+
+.btn-outline-light {
+    border-width: 2px;
+    font-weight: 700;
+}
+
+
+/*
+ *  Site Components
+ */
 
 #header {
     background: #000;
@@ -26,40 +64,48 @@ body {
     background-repeat: no-repeat;
 }
 
-h1 {
-    color: #146077;
-    font-weight: 600;
+#header-content {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    padding-top: 20vh;
 }
 
-h5 {
-    font-weight: 700;
+#header-content img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    text-shadow: 5px 5px #000;
 }
 
-p {
-    letter-spacing: 0.02em;
+#header-background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
 }
 
 #content p {
     font-size: 16px;
 }
 
-a {
-    transition: all 0.25s;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-.btn-outline-light {
-    border-width: 2px;
-    font-weight: 700;
-}
-
 #programs {
     background-color: #ccc;
     background-image: url('assets/circuit-background.svg');
+}
+
+#call-to-action {
+     background: #E31837;
+    font-size: 1.25rem;
+}
+
+#call-to-action span {
+     display: inline-block;
+    color: white;
+    font-weight: 700;
 }
 
 #footer {
@@ -68,42 +114,43 @@ a:hover {
     padding-bottom: 30px;
 }
 
-.footer-logo {
+#footer .logo {
     width: 90%;
     max-width: 400px;
     height: auto;
     transition: all 0.25s;
 }
 
-.footer-logo:hover {
+#footer .logo:hover {
     opacity: 0.7;
 }
 
-.footer-socialmedia {
+#footer .socialmedia {
     display: inline-block;
     padding-right: 10px;
     padding-top: 10px;
 }
 
-.footer-socialmedia i {
+#footer .socialmedia i {
     color: #FFFFFF;
     transition: all 0.25s;
 }
 
-.footer-socialmedia i:hover {
+#footer .socialmedia i:hover {
     opacity: 0.7;
 }
 
-.copyright {
+#footer-copyright {
     background: #000000;
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
-.copyright p {
-    color: #E6E7E8;
+#footer-copyright p {
+    color: #AAAAAA;
     text-align: center;
     font-size: 12px;
-    text-transform: none;
-    letter-spacing: 0.03em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }

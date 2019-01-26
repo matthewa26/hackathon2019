@@ -40,13 +40,13 @@
     <div class="container-fluid">
 
         <div id="header" class="row">
-            <div style="width: 100%; position: absolute; z-index: 10; padding-top: 20vh;">
+            <div id="header-content">
                 <div class="col-xl-4 offset-xl-4 text-center align-middle">
-                    <p><img src="assets/hackathon-2019-logo-color.png" style="width: 90%; max-width: 350px; height: auto; text-shadow: 5px 5px #000" alt="OA Hackathon 2019" /></p>
+                    <p><img src="assets/hackathon-2019-logo-color.png" alt="OA Hackathon 2019" /></p>
                     <p><a href="https://registration.oa-bsa.org" target="_blank" class="btn btn-lg btn-outline-light" role="button">Register Now</a></p>
                 </div>
             </div>
-            <canvas class="header-background" style="height: 100%; width: 100%; position: absolute; z-index: 0;"></canvas>
+            <canvas id="header-background"></canvas>
         </div>
 
         <div class="row content pt-4">
@@ -59,7 +59,7 @@
             </div>
         </div>
         <div id="programs" class="row justify-content-center py-4">
-            <h2 class="mt-2 mb-4" style="font-size: 1.5rem; font-weight: 700;">Choose your path...</h2>
+            <h2 class="mt-2 mb-4">Choose your path...</h2>
             <div class="card-deck mx-3 mb-3">
                 <div class="card text-center">
                     <div class="card-body">
@@ -81,25 +81,25 @@
                 </div>
             </div>
         </div>
-        <div id="call-to-action" class="row justify-content-center" style="background: #E31837; font-size: 1.25rem;">
+        <div id="call-to-action" class="row justify-content-center">
             <div class="col-sm-6 text-center py-4">
-                <span class="pr-3" style="display: inline-block; color: white; font-weight: 700;">Ready to get started?</span>
+                <span class="pr-3">Ready to get started?</span>
                 <a href="https://registration.oa-bsa.org" target="_blank" class="btn btn-outline-light align-baseline" role="button" style="font-size: inherit;">Register Now <i class="fas fa-angle-right align-text-bottom"></i></a>
             </div>
         </div>
         <div id="footer" class="row">
             <div class="col-md-5 col-sm-6 offset-md-1">
-                <a href="https://oa-bsa.org" target="_blank"><img src="assets/oasignature_reversed.png" class="footer-logo" alt="Order of the Arrow, Boy Scouts of America" /></a>
+                <a href="https://oa-bsa.org" target="_blank"><img src="assets/oasignature_reversed.png" class="logo" alt="Order of the Arrow, Boy Scouts of America" /></a>
             </div>
-            <div class="col-md-4 col-sm-6" style="text-align: right;">
-                <div class="footer-socialmedia"><a href="https://www.facebook.com/oabsa" target="_blank"><i class="fab fa-facebook-square fa-3x footer-icon"></i></a></div>
-                <div class="footer-socialmedia"><a href="https://twitter.com/oabsa" target="_blank"><i class="fab fa-twitter-square fa-3x footer-icon"></i></a></div>
-                <div class="footer-socialmedia"><a href="https://www.instagram.com/oabsa/" target="_blank"><i class="fab fa-instagram fa-3x footer-icon"></i></a></div>
-                <div class="footer-socialmedia"><a href="https://www.snapchat.com/add/oa-bsa" target="_blank"><i class="fab fa-snapchat-square fa-3x footer-icon"></i></a></div>
+            <div class="col-md-4 col-sm-6 text-right">
+                <div class="socialmedia"><a href="https://www.facebook.com/oabsa" target="_blank"><i class="fab fa-facebook-square fa-3x footer-icon"></i></a></div>
+                <div class="socialmedia"><a href="https://twitter.com/oabsa" target="_blank"><i class="fab fa-twitter-square fa-3x footer-icon"></i></a></div>
+                <div class="socialmedia"><a href="https://www.instagram.com/oabsa/" target="_blank"><i class="fab fa-instagram fa-3x footer-icon"></i></a></div>
+                <div class="socialmedia"><a href="https://www.snapchat.com/add/oa-bsa" target="_blank"><i class="fab fa-snapchat-square fa-3x footer-icon"></i></a></div>
             </div>
         </div>
 
-        <div class="row copyright">
+        <div id="footer-copyright" class="row">
             <div class="col-lg-12">
                 <p>Copyright &copy; 2019, Order of the Arrow, Boy Scouts of America. All rights reserved.</p>
             </div>
