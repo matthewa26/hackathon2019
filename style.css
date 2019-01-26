@@ -17,7 +17,7 @@ body {
 
 #header {
     background: #000;
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/assets/cyber-background-red-oa.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/cyber-background-red-oa.jpg');
     height: 100vh;
     min-height: 600px;
     background-size: cover;
@@ -55,6 +55,11 @@ a:hover {
 .btn-outline-light {
     border-width: 2px;
     font-weight: 700;
+}
+
+#programs {
+    background-color: #ccc;
+    background-image: url('assets/circuit-background.svg');
 }
 
 #footer {
