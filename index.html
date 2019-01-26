@@ -31,14 +31,14 @@
 <body ontouchstart="">
 
 <div class="container-fluid">
-    <!--<div class="row-notification">
-        <p>Important Notification Here</p>
-    </div>-->
 
-    <div class="row row-header">
-                <div class="hackathon-image">
-                    <img src="assets/hackathon-logo-border-2.png" style="width: 90%; max-width: 350px; height: auto;" alt="OA Hackathon 2019" />
-                </div>
+    <div class="row row-header" style="background: #000; height: 100vh;">
+        <div style="width: 100%; position: absolute; z-index: 10; padding-top: 20vh;">
+            <div class="col-sm-4 offset-sm-4 text-center align-middle">
+                <img src="assets/hackathon-2019-logo-color.png" style="width: 90%; max-width: 350px; height: auto;" alt="OA Hackathon 2019" />
+            </div>
+        </div>
+        <canvas class="header-background" style="height: 100%; width: 100%; position: absolute; z-index: 0;"></canvas>
     </div>
 
     <div class="row content">
@@ -80,40 +80,15 @@
         </div>
     </div>
 
-    <!--<div class="row row-articles">
-        <div class="col-md-5 col-md-offset-1">
-            <h3>Articles</h3>
-            <ul class="list">
-                <li>Article 1</li>
-                <li>Article 1</li>
-                <li>Article 1</li>
-                <li>Article 1</li>
-                <li>Article 1</li>
-                <li>Article 1</li>
-            </ul>
-        </div>
-        <div class="col-md-5">
-            <h3>Other Information</h3>
-            <ul class="list">
-                <li>Article 1</li>
-                <li>Article 1</li>
-                <li>Article 1</li>
-                <li>Article 1</li>
-                <li>Article 1</li>
-                <li>Article 1</li>
-            </ul>
-        </div>
-    </div>-->
-
     <div class="row footer">
-        <div class="col-md-5 col-sm-6 col-md-offset-1">
+        <div class="col-md-5 col-sm-6 offset-md-1">
             <a href="https://oa-bsa.org" target="_blank"><img src="assets/oasignature_reversed.png" class="footer-logo" alt="Order of the Arrow, Boy Scouts of America" /></a>
         </div>
         <div class="col-md-4 col-sm-6" style="text-align: right;">
-            <div class="footer-socialmedia"><a href="https://www.facebook.com/oabsa" target="_blank"><i class="fa fa-facebook-square fa-3x footer-icon"></i></a></div>
-            <div class="footer-socialmedia"><a href="https://twitter.com/oabsa" target="_blank"><i class="fa fa-twitter-square fa-3x footer-icon"></i></a></div>
-            <div class="footer-socialmedia"><a href="https://www.instagram.com/oabsa/" target="_blank"><i class="fa fa-instagram fa-3x footer-icon"></i></a></div>
-            <div class="footer-socialmedia"><a href="https://www.snapchat.com/add/oa-bsa" target="_blank"><i class="fa fa-snapchat-square fa-3x footer-icon"></i></a></div>
+            <div class="footer-socialmedia"><a href="https://www.facebook.com/oabsa" target="_blank"><i class="fab fa-facebook-square fa-3x footer-icon"></i></a></div>
+            <div class="footer-socialmedia"><a href="https://twitter.com/oabsa" target="_blank"><i class="fab fa-twitter-square fa-3x footer-icon"></i></a></div>
+            <div class="footer-socialmedia"><a href="https://www.instagram.com/oabsa/" target="_blank"><i class="fab fa-instagram fa-3x footer-icon"></i></a></div>
+            <div class="footer-socialmedia"><a href="https://www.snapchat.com/add/oa-bsa" target="_blank"><i class="fab fa-snapchat-square fa-3x footer-icon"></i></a></div>
         </div>
     </div>
 
@@ -125,23 +100,34 @@
 
 </div>
 
-<canvas class="background"></canvas>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="inc/particles.js-master/particles.min.js"></script>
 
 <script>
-    window.onload= function() {
+      window.onload = function() {
         Particles.init({
-            selector: '.background',
-            color: '#000000',
-            maxParticles: '30',
-            minDistance: '300',
-            connectParticles: 'true'
+          selector: '.header-background',
+          color: '#ffffff',
+          maxParticles: 130,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 50
+              }
+            }
+          ]
         });
-    }
+      };
+
 </script>
 </body>
 </html>
