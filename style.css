@@ -68,7 +68,7 @@ a:hover {
     width: 100%;
     position: absolute;
     z-index: 10;
-    padding-top: 20vh;
+    padding-top: 27vh;
 }
 
 #header-content img {
@@ -89,7 +89,20 @@ a:hover {
 }
 
 #content p {
-    font-size: 16px;
+    font-size: 1.2rem;
+}
+
+#content h5 {
+    color: #E31837;
+    font-family: 'Museo Slab', Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#content hr {
+    border-top: 3px solid #E31837;
+    width: 50%;
 }
 
 #programs {
@@ -98,7 +111,7 @@ a:hover {
 }
 
 #call-to-action {
-     background: #E31837;
+    background: #E31837;
     font-size: 1.25rem;
 }
 
