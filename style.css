@@ -30,6 +30,7 @@ p {
 }
 
 a {
+    color: #E31837;
     transition: all 0.25s;
     text-decoration: none;
 }
