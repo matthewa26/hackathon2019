@@ -2,11 +2,6 @@
  *  HTML Elements
  */
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: "Museo Sans", Arial, sans-serif;
 }
@@ -77,16 +72,6 @@ a:hover {
     max-width: 350px;
     height: auto;
     text-shadow: 5px 5px #000;
-}
-
-#header-background {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
 }
 
 #content p {
