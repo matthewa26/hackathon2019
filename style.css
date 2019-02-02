@@ -75,6 +75,10 @@ a:hover {
     text-shadow: 5px 5px #000;
 }
 
+#content .jumbotron {
+     width: 100%;
+}
+
 #content p {
     font-size: 1.2rem;
 }
@@ -107,6 +111,10 @@ a:hover {
     color: white;
     font-weight: 700;
     padding-right: 1rem;
+}
+
+#call-to-action a {
+     font-size: inherit;
 }
 
 #footer {
