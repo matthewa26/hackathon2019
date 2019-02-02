@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://oa-bsa.org/hackathon/</title>
+  <link>https://oa-bsa.org/hackathon/</link>
+
+<item>
+     <link>https://oa-bsa.org/hackathon/</link>
+     <title>2019 OA Hackathon | Order of the Arrow, Boy Scouts of America</title>
+     <description>All members of the Order of the Arrow, regardless of technical skill, are invited to attend the 2019 OA Hackathon on June 26th-30th.</description>
+     <ror:updatePeriod>weekly</ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
