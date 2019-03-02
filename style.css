@@ -103,13 +103,18 @@ a:hover {
 
 #flyer span {
     display: inline-block;
-    color: white;
+    color: #fff;
     font-weight: 700;
     padding-right: 1rem;
 }
 
 #flyer a {
-     font-size: inherit;
+    font-size: inherit;
+    color: #fff;
+}
+
+#flyer a:hover {
+    color: #E31837;
 }
 
 #programs {
